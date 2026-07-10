@@ -25,3 +25,18 @@ myfuction=function  (){
 
 }
 console.log(typeof(myfuction)) // object-function
+
+// **********************************************************************************
+/*
+Stack (primitive) - uska copy milta hai
+ Heap (non- primitive) - jo bhi change karenge wo original value me change hoga
+
+
+
+
+
+
+
+
+
+*/
