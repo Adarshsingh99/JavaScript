@@ -1,0 +1,55 @@
+Here are some basic GitHub commands you’ll use most often:
+
+Configure Git (first time setup)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Clone a Repository
+git clone https://github.com/username/repository.git
+Check Repository Status
+git status
+Add Files to Staging Area
+git add filename.txt
+
+Add all files:
+
+git add .
+Commit Changes
+git commit -m "Describe your changes"
+View Commit History
+git log
+Create a New Branch
+git branch feature-branch
+Switch Branches
+git checkout feature-branch
+
+Or create and switch in one command:
+
+git checkout -b feature-branch
+Pull Latest Changes
+git pull origin main
+Push Changes
+git push origin main
+
+Push a new branch:
+
+git push -u origin feature-branch
+Merge a Branch
+
+Switch to target branch:
+
+git checkout main
+
+Merge:
+
+git merge feature-branch
+View Remote Repositories
+git remote -v
+Delete a Branch
+
+Local:
+
+git branch -d feature-branch
+
+Remote:
+
+git push origin --delete feature-branch
