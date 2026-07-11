@@ -1,17 +1,20 @@
-const score = 400
+// /************************************** Maths********************************************************************/
 
-const balance = new Number("100") // this is always 100% number
-console.log(balance)  // [Number: 100]
+console.log(Math) // object which has many function
 
-console.log(balance.toFixed(2)) //100.00
-console.log(balance.toString()) // string 
-console.log(balance.toString().length) //3
-console.log(balance.length) // this is object so it give undefine
+console.log(Math.abs(-6)) // negative become positive
+console.log(Math.round(4.76776)) // 5
+console.log(Math.ceil(4.3))
+console.log(Math.floor(4.9))
+console.log(Math.max(1,2,3,4))
+console.log(Math.max(4,3,4,2))
 
-const otherNumber = 123.8966
+console.log(Math.random()) // most used - in this value always come in 0 to 1 
+console.log(Math.random()*10+1)
+console.log(Math.round(Math.random()*1000 + 1))
 
-console.log(otherNumber.toPrecision(4)) //123.9
-
-const hundres = 1000000
-console.log(hundres.toLocaleString('en-In')) //10,00,000
-
+// agar mujhe ek range me random number chahiye tab
+const min = 10
+const max = 20
+//formula 
+console.log(Math.floor(Math.random()*(max-min+1))+min)
