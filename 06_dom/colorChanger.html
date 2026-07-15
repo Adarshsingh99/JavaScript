@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround Color changer</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+#yellow {
+    background-color:yellow;
+}
+
+#grey {
+    background-color: grey;
+}
+#green {
+    background-color: green;
+}
+
+#black {
+    background-color: black;
+}
+#orange {
+    background-color: orange;
+}
+
+#violet {
+    background-color: violet;
+}
+#brown {
+    background-color: brown;
+}
+
+#pink {
+    background-color: pink;
+}
+
+</style>
+<body>
+    <div>
+        <h1>Choose your fav color</h1>
+    </div>
+    <div  id="red" class="button"></div>
+    <div id="blue" class="button"></div>
+    <div id="yellow" class="button"></div>
+    <div id="green" class="button"></div>
+    <div id="grey" class="button"></div>
+    <div id="violet" class="button"></div>
+    <div id="brown" class="button"></div>
+    <div id="pink" class="button"></div>
+    <div id="black" class="button"></div>
+    <div id="orange" class="button"></div>
+    
+</body>
+<script>
+   const buttons = document.querySelectorAll('.button')
+   const body = document.querySelector('body')
+   buttons.forEach(function(button)
+{
+    addEventListener('click',function(e)
+{
+   if(e.target.id==='red'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='blue'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='yellow'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='green'){
+    body.style.backgroundColor=e.target.id
+   }   if(e.target.id==='grey'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='brown'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='black'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='orange'){
+    body.style.backgroundColor=e.target.id
+   }
+         if(e.target.id==='pink'){
+    body.style.backgroundColor=e.target.id
+   }
+      if(e.target.id==='violet'){
+    body.style.backgroundColor=e.target.id
+   }
+});
+});
+
+</script>
+</html>
