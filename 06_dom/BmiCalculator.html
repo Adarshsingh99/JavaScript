@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi calculator</title>
+</head>
+<body>
+    <h1>BMI CALCULATOR</h1>
+    <form>
+        <p>
+            <label>height in : cm</label>
+                <input type="text" id="height"/>
+        </p>
+          <p>
+            <label>weight in kg : </label>
+                <input type="text" id="weight"/>     
+        </p>
+        <button >calculate</button>
+        <div id="result"> </div>
+    </form>
+</body>
+<script>
+    // input se value kese nikalu
+    const form = document.querySelector('form')
+    form.addEventListener('submit',function(e)
+{
+    e.preventDefault();
+    // value jo milegi wo string me milegi
+   const height=  parseInt(document.querySelector('#height').value);
+   const weight = parseInt(document.querySelector('#weight').value);
+   const result = document.querySelector('#result')
+   if(height=='' || height<0 || isNaN(height))
+   {
+    result.innerHTML = "please give correct value"
+
+   }
+   else if (weight=='' || weight<0 || isNaN(weight))
+   {
+    result.innerHTML = "please give correct value"
+   }
+   else{
+       const bmi = (weight / ((height / 100) ** 2)).toFixed(2);
+       result.innerHTML = bmi
+   }
+})
+</script>
+</html>
